@@ -1,28 +1,19 @@
-const finalPosition = function (moves) {
-  let x = 0;
-  let y = 0;
-
-  for (let move of moves) {
-    switch (move) {
-      case "north":
-        y++;
-        break;
-      case "south":
-        y--;
-        break;
-      case "east":
-        x++;
-        break;
-      case "west":
-        x--;
-        break;
-    }
-  }
-  return finalPosition;
-};
-console.log(finalPosition[moves]);
 const moves = ["north", "north", "west", "west", "north", "east", "north"];
 
-finalPosition(moves);
-
-finalPosition(moves);
+const finalPosition = (moves) => {
+  let xTotal = 0;
+  let yTotal = 0;
+  for (let i = 0; i <= moves.length; i++) {
+    if (moves[i] === "north") {
+      yTotal++;
+    } else if (moves[i] === "south") {
+      yTotal--;
+    } else if (moves[i] === "west") {
+      xTotal--;
+    } else if (moves[i] === "east") {
+      xTotal++;
+    }
+  }
+  return [xTotal, yTotal];
+};
+console.log(finalPosition(moves));
