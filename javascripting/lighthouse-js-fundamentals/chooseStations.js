@@ -5,7 +5,17 @@ const stations = [
 ];
 
 function chooseStations(stations) {
+  const goodStations = [];
+
   for (const station of stations) {
-    console.log(stations);
+    const capacity = station[1];
+    if (capacity >= 20) {
+      const type = station[2];
+
+      if (type === "school" || type === "community centre")
+        goodStations.push(station[0]);
+    }
   }
+  return goodStations;
 }
+console.log(chooseStations(stations));
