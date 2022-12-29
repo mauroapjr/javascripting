@@ -1,4 +1,4 @@
-const iceCreamFlavours = [
+let iceCreamFlavours = [
   "chocolate",
   "vanilla",
   "cookies and cream",
@@ -16,5 +16,4 @@ console.log(firstFlavour);
 let lastFlavour = iceCreamFlavours[iceCreamFlavours.length - 1];
 console.log(lastFlavour);
 
-const size = iceCreamFlavours.lenght;
-console.log(size);
+console.log(iceCreamFlavours.length);
