@@ -21,7 +21,7 @@ function carPassing(cars, speed) {
     speed: speed,
   };
   cars.push(newCar);
-  return newCar;
+  return cars;
 }
 carPassing(cars, speed);
 console.log(cars);
