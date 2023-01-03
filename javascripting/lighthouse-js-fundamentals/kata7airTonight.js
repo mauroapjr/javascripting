@@ -1,18 +1,3 @@
-/*const checkAir = (samples, threshold) => {
-  let dirtySamples = 0;
-
-  for (i = 0; i < samples.length; i++);
-  {
-    if (samples[i] === "dirty") {
-      dirtySamples++;
-    } else if (threshold < dirtySamples / samples.length) {
-      return "Poluted";
-    } else {
-      return "Clean";
-    }
-  }
-};*/
-
 const checkAir = (samples, threshold) => {
   let dirtySamples = 0;
   for (let i = 0; i < samples.length; i++) {
